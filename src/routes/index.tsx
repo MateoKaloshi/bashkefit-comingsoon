@@ -1,24 +1,32 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Së shpejti | Coming Soon" },
+      { name: "description", content: "Website është në punime për momentin. Kthehuni së shpejti." },
+      { property: "og:title", content: "Së shpejti | Coming Soon" },
+      { property: "og:description", content: "Website është në punime për momentin. Kthehuni së shpejti." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
+    <main className="flex min-h-screen flex-col items-center justify-center gap-8 px-6 text-center">
       <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
+        src="/logo.png"
+        alt="Logoja"
+        width={128}
+        height={128}
+        className="h-32 w-32 object-contain"
       />
-    </div>
+      <h1 className="text-xl font-medium tracking-tight text-foreground">
+        Website eshte ne punime per momentin :/
+      </h1>
+    </main>
   );
 }
