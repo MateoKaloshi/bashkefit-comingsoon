@@ -16,15 +16,18 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-8 px-6 text-center">
+    <main
+      className="flex min-h-screen flex-col items-center justify-center gap-10 px-6 text-center"
+      style={{ backgroundColor: "#A9BE95" }}
+    >
       <img
-        src="/logo.png"
+        src="/logo.jpg"
         alt="Logoja"
-        width={128}
-        height={128}
-        className="h-32 w-32 object-contain"
+        width={200}
+        height={200}
+        className="h-48 w-48 object-contain"
       />
-      <h1 className="text-xl font-medium tracking-tight text-foreground">
+      <h1 className="text-lg font-medium tracking-tight text-white">
         Website eshte ne punime per momentin :/
       </h1>
     </main>
