@@ -1,0 +1,19 @@
+# Netlify build configuration for TanStack Start + Nitro
+[build]
+  command = "bun run build"
+  publish = ".netlify/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Optional: redirect all routes to the SSR handler
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200
+
+# Optional: cache static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
