@@ -28,16 +28,10 @@ function Index() {
         className="h-32 w-32 object-contain sm:h-36 sm:w-36"
       />
       <div className="max-w-md space-y-4">
-        <h1
-          className="text-lg font-bold tracking-tight text-white sm:text-xl"
-          style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
-        >
+        <h1 className="text-lg font-bold tracking-tight text-white sm:text-xl">
           website është në punime për momentin :/
         </h1>
-        <p
-          className="text-base font-bold text-white sm:text-lg"
-          style={{ textShadow: "0 2px 4px rgba(0,0,0,0.25)" }}
-        >
+        <p className="text-base font-bold text-white sm:text-lg">
           @bashkefit në çdo rrjet social :)
         </p>
       </div>
