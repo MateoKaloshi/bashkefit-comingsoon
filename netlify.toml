@@ -5,15 +5,4 @@
 
 [build.environment]
   NODE_VERSION = "20"
-
-# Optional: redirect all routes to the SSR handler
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/server"
-  status = 200
-
-# Optional: cache static assets
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+  NETLIFY_USE_BUN = "true"
