@@ -1,7 +1,7 @@
 # Netlify build configuration for TanStack Start + Nitro
 [build]
 command = "bun run build"
-publish = "dist/client"
+publish = "dist"
 
 [build.environment]
   NODE_VERSION = "20"
