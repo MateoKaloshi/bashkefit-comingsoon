@@ -23,11 +23,11 @@ function Index() {
       <img
         src="/logo.png"
         alt="Logoja"
-        width={240}
-        height={240}
-        className="h-48 w-48 object-contain sm:h-56 sm:w-56"
+        width={160}
+        height={160}
+        className="h-32 w-32 object-contain sm:h-36 sm:w-36"
       />
-      <div className="max-w-md space-y-3">
+      <div className="max-w-md space-y-4">
         <h1
           className="text-lg font-bold tracking-tight text-white sm:text-xl"
           style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
@@ -35,8 +35,8 @@ function Index() {
           website është në punime për momentin :/
         </h1>
         <p
-          className="text-sm font-semibold text-white/95 sm:text-base"
-          style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
+          className="text-base font-bold text-white sm:text-lg"
+          style={{ textShadow: "0 2px 4px rgba(0,0,0,0.25)" }}
         >
           @bashkefit në çdo rrjet social :)
         </p>
