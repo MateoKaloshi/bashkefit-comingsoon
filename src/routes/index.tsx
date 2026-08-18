@@ -18,7 +18,7 @@ function Index() {
   return (
     <main
       className="flex min-h-screen flex-col items-center justify-center gap-8 px-6 py-12 text-center"
-      style={{ backgroundColor: "#A9BE95" }}
+      style={{ backgroundColor: "#AEBE95" }}
     >
       <img
         src="/logo.jpg"
