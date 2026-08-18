@@ -4,9 +4,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Së shpejti | Coming Soon" },
-      { name: "description", content: "Website është në punime për momentin. Kthehuni së shpejti." },
+      { name: "description", content: "Website është në punime për momentin. @bashkefit në çdo rrjet social." },
       { property: "og:title", content: "Së shpejti | Coming Soon" },
-      { property: "og:description", content: "Website është në punime për momentin. Kthehuni së shpejti." },
+      { property: "og:description", content: "Website është në punime për momentin. @bashkefit në çdo rrjet social." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -17,19 +17,24 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-center gap-10 px-6 text-center"
-      style={{ backgroundColor: "#A9BE95" }}
+      className="flex min-h-screen flex-col items-center justify-center gap-8 px-6 py-12 text-center"
+      style={{ backgroundColor: "#AEBE95" }}
     >
       <img
         src="/logo.jpg"
         alt="Logoja"
         width={200}
         height={200}
-        className="h-48 w-48 object-contain"
+        className="h-40 w-40 object-contain sm:h-48 sm:w-48"
       />
-      <h1 className="text-lg font-medium tracking-tight text-white">
-        Website eshte ne punime per momentin :/
-      </h1>
+      <div className="space-y-2">
+        <h1 className="text-base font-medium tracking-tight text-white sm:text-lg">
+          website është në punime për momentin :/
+        </h1>
+        <p className="text-sm font-medium text-white/90 sm:text-base">
+          @bashkefit në çdo rrjet social :)
+        </p>
+      </div>
     </main>
   );
 }
