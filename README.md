@@ -1,14 +1,18 @@
-# Welcome to your Lovable project
+# Coming Soon Page (92)
+
+thjesht bej nje faqe pa asgje sepse do jet faqe coming soon shkruaj "Website eshte ne punime per momentin :/" dhe vendos vetem logon pa background para.  nje website  shum i thjeshte
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://building-happiness.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/523f18d1-fbfb-4597-9c08-a42e6017e400).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +24,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
