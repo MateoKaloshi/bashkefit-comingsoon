@@ -1,0 +1,8 @@
+# Netlify build configuration for TanStack Start + Nitro
+[build]
+  command = "bun run build"
+  publish = ".netlify/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NETLIFY_USE_BUN = "true"
